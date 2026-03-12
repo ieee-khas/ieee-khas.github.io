@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title> SQL Eğitimi | IEEE KHAS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Kadir Has Üniversitesi Öğrenci Kolu</title>
+  <link rel="icon" type="image/png" href="ieee.png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html">
+      <img src="navb.png" alt="KHAS IEEE">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li>
+      <li><a href="yonetim-kurulu.html">Yönetim Kurulu</a></li>
+       <li><a href="takvim.html">Takvim</a></li>
+      <li><a href="arsiv.html">Arşiv</a></li>
+    </ul>
+
+    <a href="https://forms.gle/faNprRgCDwymgeoz8" target="_blank" class="nav-cta">Üye Ol</a>
+    <button class="nav-toggle" aria-label="Menüyü Aç">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<section class="event-detail">
+  <div class="event-detail-container">
+
+    <h1>SQL Eğitimi</h1>
+
+    <img src="sql1.jpeg" alt="sql1.jpeg">
+
+    <p>
+Eğitmenimiz Durali CAN önderliğinde 3 haftalık SQL eğitim programımızın ilk dersini başarıyla tamamladık.
+</p>
+
+<p>
+Eğitimimizi hem yüz yüze hem de çevrim içi olarak eş zamanlı şekilde gerçekleştirdik. Eğitim kapsamında katılımcılar, veritabanı kavramları, SQL’in temel yapısı ve veri sorgulama mantığı hakkında giriş seviyesinde bilgi edindi.
+</p>
+
+<p>
+Programın ilerleyen haftalarında daha ileri sorgu teknikleri ve uygulamalı çalışmalarla eğitim devam edecektir.
+</p>
+      </div>
+  
+    <div class="gallery">
+    <img src="sql2.jpeg" onclick="openModal(this)">
+    <img src="sql3.jpeg" onclick="openModal(this)">
+    <img src="sql4.jpeg" onclick="openModal(this)">
+  </div>
+
+</section>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <img id="modalImg">
+  </div>
+</div>
+
+
+
+    <a href="arsiv.html" class="back-link">← Etkinliklere geri dön</a>
+
+  </div>
+</section>
+<!-- FOOTER -->
+<footer class="ieee-footer">
+  <div class="footer-container">
+
+    <div class="footer-col logo-col">
+      <img src="ftr.png" height="120" alt="IEEE Kadir Has Üniversitesi">
+    </div>
+
+    <div class="footer-col">
+      <h4>BAĞLANTILAR</h4>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+     <a href="yonetim-kurulu.html">Yönetim Kurulu</a>
+     <a href="takvim.html">Takvim</a>
+      <a href="arsiv.html">Arşiv</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>İLETİŞİM</h4>
+      <p>📧 ieee@khas.edu.tr</p>
+      <p>📍Cibali Mah. Kadir Has Cad. 34083
+Fatih-İstanbul</p>
+    </div>
+<div class="footer-col">
+  <h4>SOSYAL</h4>
+    <div class="footer-socials">
+    <a href="https://www.instagram.com/ieeekhas/" target="_blank" class="social-link">
+      <img src="instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/company/ieeekhas/" target="_blank" class="social-link">
+      <img src="linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://www.youtube.com/channel/UCfJag9O6M5VHuP1RBbI7eIg" target="_blank" class="social-link">
+      <img src="youtube.png" alt="YouTube">
+    </a>
+  </div>
+  </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    © IEEE Kadir Has Üniversitesi Öğrenci Kolu 2026
+  </div>
+</footer>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navbar = document.querySelector('.navbar');
+
+  navToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+</script>
+<script>
+function openModal(img) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+
+  modal.style.display = "flex";
+  modalImg.src = img.src;
+}
+
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+/* Boş alana tıklayınca kapansın */
+document.getElementById("imageModal").addEventListener("click", function(e) {
+  if (e.target === this) {
+    closeModal();
+  }
+});
+</script>
+
+</body>
+
+</html>
