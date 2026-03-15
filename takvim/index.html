@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Takvim | IEEE KHAS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="ieee.png" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="/">
+      <img src="/navb.png" alt="KHAS IEEE">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="/">Ana Sayfa</a></li>
+      <li><a href="hakkimizda">Hakkımızda</a></li>
+      <li><a href="yonetim-kurulu">Yönetim Kurulu</a></li>
+       <li><a href="takvim">Takvim</a></li>
+      <li><a href="arsiv">Arşiv</a></li>
+    </ul>
+
+    <a href="https://forms.gle/faNprRgCDwymgeoz8" target="_blank" class="nav-cta">Üye Ol</a>
+    <button class="nav-toggle" aria-label="Menüyü Aç">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+  </div>
+</nav>
+
+<section class="calendar-section">
+  <h1>Etkinlik Takvimi</h1>
+
+  <div class="calendar-wrapper">
+    <iframe 
+      src="https://calendar.google.com/calendar/embed?src=405259ddaa9594810b07db4ea3227309bea539027c2d830b7d03b1a6a14c4a1c%40group.calendar.google.com&ctz=Europe%2FIstanbul" style="border: 0"
+      width="100%" 
+      height="600" 
+      frameborder="0" 
+      scrolling="no">
+    </iframe>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ieee-footer">
+  <div class="footer-container">
+
+    <div class="footer-col logo-col">
+      <img src="/ftr.png" height="120" alt="IEEE Kadir Has Üniversitesi">
+    </div>
+
+    <div class="footer-col">
+      <h4>BAĞLANTILAR</h4>
+      <a href="/">Ana Sayfa</a>
+      <a href="hakkimizda">Hakkımızda</a>
+      <a href="yonetim-kurulu">Yönetim Kurulu</a>
+      <a href="takvim">Takvim</a>
+      <a href="arsiv">Arşiv</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>İLETİŞİM</h4>
+      <p>📧 ieee@khas.edu.tr</p>
+      <p>📍Cibali Mah. Kadir Has Cad. 34083 Fatih-İstanbul</p>
+    </div>
+
+   <div class="footer-col">
+  <h4>SOSYAL</h4>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/ieeekhas/" target="_blank" class="social-link">
+      <img src="/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.linkedin.com/company/ieeekhas/" target="_blank" class="social-link">
+      <img src="/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://www.youtube.com/channel/UCfJag9O6M5VHuP1RBbI7eIg" target="_blank" class="social-link">
+      <img src="/youtube.png" alt="YouTube">
+    </a>
+  </div>
+  </div>
+
+
+  </div>
+
+  <div class="footer-bottom">
+    © IEEE Kadir Has Üniversitesi Öğrenci Kolu 2026
+  </div>
+</footer>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navbar = document.querySelector('.navbar');
+
+  navToggle.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
