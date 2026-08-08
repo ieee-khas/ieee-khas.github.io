@@ -2181,44 +2181,6 @@ text-decoration:underline;
 
 
 
-.nav-container {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 0 30px !important;
 
-  height: 70px !important;
-
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-}
-
-.nav-logo {
-  margin-left: 0 !important;
-}
-
-.nav-links {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  gap: 28px !important;
-  margin: 0 auto !important;
-}
-
-.nav-cta {
-  margin-left: 20px !important;
-  margin-right: 0 !important;
-}
-
-/* Mobil */
-@media (max-width: 768px) {
-  .nav-container {
-    width: 100% !important;
-    max-width: none !important;
-    padding: 0 15px !important;
-  }
-}
 
 
