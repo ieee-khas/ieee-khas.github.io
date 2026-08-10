@@ -4946,3 +4946,22 @@ body {
     transform: translateX(6px) !important;
   }
 }
+
+
+
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    width: 100% !important;
+    max-width: none !important;
+
+    left: 0 !important;
+    right: 0 !important;
+
+    transform: none !important;
+
+    border-radius: 0 !important;
+  }
+
+}
