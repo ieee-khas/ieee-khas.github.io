@@ -4965,3 +4965,38 @@ body {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: fixed !important;
+
+    top: 70px !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100vw !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    transform: none !important;
+
+    border-radius: 0 !important;
+
+    box-sizing: border-box !important;
+  }
+
+}
