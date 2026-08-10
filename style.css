@@ -4345,18 +4345,17 @@ text-decoration:underline;
 
 
 
-
 /* =========================================================
-   GLOBAL NAVBAR - TÜM SAYFALARDA AYNI
+   TEK GLOBAL NAVBAR
    ========================================================= */
 
 .navbar {
-  position: fixed !important;
-  top: 0;
-  left: 0;
-
   width: 100%;
   height: 70px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
 
   background: #00629b;
 
@@ -4369,7 +4368,6 @@ text-decoration:underline;
   height: 70px;
 
   margin: 0 auto;
-
   padding: 0 20px;
 
   display: flex;
@@ -4380,30 +4378,23 @@ text-decoration:underline;
 .nav-logo {
   display: flex;
   align-items: center;
-
   flex-shrink: 0;
 }
 
 .nav-logo img {
   height: 55px;
   width: auto;
-
   display: block;
 }
 
 .nav-links {
+  list-style: none;
+
   display: flex;
   align-items: center;
 
   gap: 28px;
 
-  list-style: none;
-
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
   margin: 0;
   padding: 0;
 }
@@ -4424,10 +4415,10 @@ text-decoration:underline;
 .nav-cta {
   display: inline-block;
 
+  padding: 8px 20px;
+
   background: #ffffff;
   color: #00629b;
-
-  padding: 8px 20px;
 
   border-radius: 999px;
 
@@ -4441,42 +4432,30 @@ text-decoration:underline;
 
 .nav-toggle {
   display: none;
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
 }
-
-
-/* Navbar fixed olduğu için */
 
 body {
   padding-top: 70px;
 }
 
 
-
-
-
-
-
-
-
-
 /* =========================================================
-   GLOBAL NAVBAR - MOBİL
+   MOBİL NAVBAR
    ========================================================= */
 
 @media (max-width: 768px) {
 
-  .navbar {
-    height: 70px;
-  }
-
   .nav-container {
-    height: 70px;
+    padding: 0 16px;
 
-    padding: 0 16px !important;
-
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav-logo img {
@@ -4484,22 +4463,17 @@ body {
   }
 
   .nav-toggle {
-    display: flex !important;
+    display: flex;
 
     flex-direction: column;
     justify-content: center;
 
-    position: static !important;
+    margin: 0;
+    padding: 0;
 
-    margin: 0 !important;
-    padding: 0 !important;
+    position: static;
 
-    transform: none !important;
-
-    background: none;
-    border: none;
-
-    cursor: pointer;
+    transform: none;
   }
 
   .nav-toggle span {
@@ -4523,22 +4497,21 @@ body {
 
     width: 100%;
 
-    background: #00629b;
-
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     align-items: center;
 
-    gap: 15px;
+    gap: 14px;
 
     padding: 20px 0 65px;
 
-    margin: 0;
+    background: #00629b;
 
     max-height: 0;
-    opacity: 0;
 
     overflow: hidden;
+
+    opacity: 0;
     pointer-events: none;
 
     transition:
@@ -4547,9 +4520,9 @@ body {
   }
 
   .navbar.active .nav-links {
-    max-height: 450px;
-    opacity: 1;
+    max-height: 430px;
 
+    opacity: 1;
     pointer-events: auto;
   }
 
@@ -4558,20 +4531,20 @@ body {
   }
 
   .nav-cta {
-    display: none !important;
+    display: none;
   }
 
   .navbar.active .nav-cta {
-    display: inline-block !important;
+    display: inline-block;
 
     position: absolute;
 
-    top: 280px;
+    top: 278px;
     left: 50%;
 
     transform: translateX(-50%);
 
-    margin: 0 !important;
+    margin: 0;
 
     padding: 7px 18px;
 
