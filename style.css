@@ -4948,6 +4948,61 @@ body {
 }
 
 
+/* YÖNETİM KURULU 4-3-2 DÜZENİ */
+
+@media (min-width: 769px) {
+  .board-members-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .board-members-grid .board-card {
+    width: 220px;
+    margin: 0;
+  }
+
+  /* İkinci satır: 3 kişi */
+  .board-members-grid .board-card:nth-child(5) {
+    grid-column: 1;
+    transform: translateX(122.5px);
+  }
+
+  .board-members-grid .board-card:nth-child(6) {
+    grid-column: 2;
+    transform: translateX(122.5px);
+  }
+
+  .board-members-grid .board-card:nth-child(7) {
+    grid-column: 3;
+    transform: translateX(122.5px);
+  }
+
+  /* Üçüncü satır: 2 kişi */
+  .board-members-grid .board-card:nth-child(8) {
+    grid-column: 2;
+  }
+
+  .board-members-grid .board-card:nth-child(9) {
+    grid-column: 3;
+  }
+
+  /* Hover efekti korunsun */
+  .board-members-grid .board-card:nth-child(n+5):nth-child(-n+7):hover {
+    transform: translate(122.5px, -6px);
+  }
+}
+
+/* Mobil görünüm */
+@media (max-width: 768px) {
+  .board-members-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+}
 
 
 
