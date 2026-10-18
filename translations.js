@@ -330,7 +330,7 @@
     "Eğitmenimiz Durali CAN önderliğinde 3 haftalık SQL eğitim programımızın ilk dersini başarıyla tamamladık.": "We successfully completed the first session of our three-week SQL training led by Durali CAN.",
     "Eğitimimizi hem yüz yüze hem de çevrim içi olarak eş zamanlı şekilde gerçekleştirdik. Eğitim kapsamında katılımcılar, veritabanı kavramları, SQL’in temel yapısı ve veri sorgulama mantığı hakkında giriş seviyesinde bilgi edindi.": "The session was held both in person and online. Participants were introduced to database concepts, SQL fundamentals, and query logic.",
     "Programın ilerleyen haftalarında daha ileri sorgu teknikleri ve uygulamalı çalışmalarla eğitimimiz devam edecektir.": "In the coming weeks, the training will continue with more advanced query techniques and hands-on exercises.",
-    "IEEE KHAS Öğrenci Kolu olarak seni tanışma toplantımızda aramızda görmek istiyoruz. Bizi yakından tanıyacak, yıl boyunca yapacağımız etkinlikleri ve projeleri öğrenecek, ekibimizle sohbet etme fırsatı bulacaksın.": "The IEEE KHAS Student Branch would love to see you at our welcome meeting. You'll get to know us, learn about the events and projects planned for the year, and chat with our team."
+    "IEEE KHAS Öğrenci Kolu olarak seni tanışma toplantımızda aramızda görmek istiyoruz. Bizi yakından tanıyacak, yıl boyunca yapacağımız etkinlikleri ve projeleri öğrenecek, ekibimizle sohbet etme fırsatı bulacaksın.": "The IEEE KHAS Student Branch would love to see you at our welcome meeting. You'll get to know us, learn about the events and projects planned for the year, and chat with our team.",
     "Moderatörlüğünü Kadir Has Üniversitesi Mekatronik Mühendisliği Bölüm Başkanı Dr. Öğr. Üyesi Mine Saraç Stroppa’nın üstlendiği panelde; Bahçeşehir Üniversitesi Mekatronik Mühendisliği Bölümü öğretim üyesi Dr. Öğr. Üyesi Durul Ulutan ile Kadir Has Üniversitesi öğretim üyelerimizden Prof. Dr. Mehmet Önder Pekcan ve Dr. Öğr. Üyesi Tunçer Baykaş, öğrencilerimizin yönelttiği soruları yanıtladı.": "The panel was moderated by Dr. Mine Saraç Stroppa, Head of Mechatronics Engineering at Kadir Has University. Dr. Durul Ulutan from Bahçeşehir University, along with Kadir Has University faculty members Prof. Dr. Mehmet Önder Pekcan and Dr. Tunçer Baykaş, answered students' questions.",
     "Sohbet havasında gerçekleşen panelde; yapay zekâ çağında kariyer planlaması, akademi ve sektör dinamikleri, mühendislik alanlarındaki güncel gelişmeler ve kariyer yolculuklarında yaşanan önemli dönüm noktaları ele alındı. Akademik ve sektörel deneyimlerin paylaşıldığı etkinlikte, öğrencilerimiz geleceğin mühendislik kariyerlerine dair değerli bilgiler ve tavsiyeler edinme fırsatı buldu.": "The informal panel covered career planning in the age of AI, academic and industry dynamics, current engineering developments, and key milestones in professional journeys. By sharing academic and industry experience, the panel offered students valuable insights and advice on future engineering careers.",
     "İki gün boyunca farklı ülkelerden öğrenci liderleri ve IEEE gönüllülerinin katılımıyla deneyim paylaşımında bulunuldu, uluslararası bağlantılar kuruldu ve öğrenci kollarının gelişimine yönelik farklı yaklaşımlar üzerine fikir alışverişi gerçekleştirildi.": "Over two days, student leaders and IEEE volunteers from different countries shared experiences, built international connections, and exchanged ideas on different approaches to developing student branches.",
@@ -437,10 +437,3 @@
 
     translatePage(currentLanguage);
   }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
-})();
