@@ -144,11 +144,11 @@
     const months = language === "en" ? monthNames : reverseMonthNames;
     // Handles dates such as "3 EKİM 2026" and standalone month labels such as "EKİM 2026".
     return value.replace(
-      /\\b(\\d{1,2}\\s+)?(OCAK|ŞUBAT|MART|NİSAN|MAYIS|HAZİRAN|TEMMUZ|AĞUSTOS|EYLÜL|EKİM|KASIM|ARALIK|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)(\\s+\\d{4})?\\b/gi,
-      (match, day = "", month, year = "") => {
+      /(^|[^\\p{L}])(\\d{1,2}\\s+)?(OCAK|ŞUBAT|MART|NİSAN|MAYIS|HAZİRAN|TEMMUZ|AĞUSTOS|EYLÜL|EKİM|KASIM|ARALIK|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)(\\s+\\d{4})?(?=$|[^\\p{L}])/giu,
+      (match, prefix = "", day = "", month, year = "") => {
         const translatedMonth = months[month.toLocaleUpperCase("tr-TR")] || months[month.toUpperCase()];
         if (!translatedMonth) return match;
-        return day + translatedMonth + year;
+        return prefix + day + translatedMonth + year;
       }
     );
   }
