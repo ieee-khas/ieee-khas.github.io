@@ -416,16 +416,18 @@
       currentLanguage = localStorage.getItem("ieee-khas-language") === "en" ? "en" : "tr";
     } catch (_) {}
 
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "language-switcher";
+    let button = nav.querySelector(".language-switcher");
+    if (!button) {
+      button = document.createElement("button");
+      button.type = "button";
+      button.className = "language-switcher";
+      const mobileToggle = nav.querySelector(".nav-toggle");
+      if (mobileToggle) nav.insertBefore(button, mobileToggle);
+      else nav.appendChild(button);
+    }
     button.textContent = currentLanguage === "en" ? "TR" : "EN";
     button.setAttribute("aria-label", currentLanguage === "en" ? "Switch to Turkish" : "Switch to English");
     button.setAttribute("title", currentLanguage === "en" ? "Türkçeye geç" : "Switch to English");
-
-    const mobileToggle = nav.querySelector(".nav-toggle");
-    if (mobileToggle) nav.insertBefore(button, mobileToggle);
-    else nav.appendChild(button);
 
     button.addEventListener("click", () => {
       currentLanguage = currentLanguage === "tr" ? "en" : "tr";
