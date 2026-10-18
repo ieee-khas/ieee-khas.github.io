@@ -5006,3 +5006,36 @@ body {
 
 
 
+
+
+/* ===== LANGUAGE SWITCHER ===== */
+.language-switcher {
+  flex: 0 0 auto;
+  min-width: 42px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.language-switcher:hover,
+.language-switcher:focus-visible {
+  background: #ffffff;
+  color: var(--ieee-blue);
+  outline: none;
+}
+@media (max-width: 900px) {
+  .nav-container {
+    gap: 10px;
+    padding: 0 14px;
+  }
+  .language-switcher {
+    margin-left: auto;
+  }
+}
