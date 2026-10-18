@@ -5076,9 +5076,9 @@ body {
 
   .nav-logo img {
     display: block;
+    height: 48px;
     width: auto;
-    max-width: 112px;
-    max-height: 48px;
+    max-width: none;
     object-fit: contain;
   }
 
