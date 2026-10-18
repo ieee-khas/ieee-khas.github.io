@@ -431,10 +431,17 @@
 
     button.addEventListener("click", () => {
       currentLanguage = currentLanguage === "tr" ? "en" : "tr";
+      button.textContent = currentLanguage === "en" ? "TR" : "EN";
+      button.setAttribute("aria-label", currentLanguage === "en" ? "Switch to Turkish" : "Switch to English");
+      button.setAttribute("title", currentLanguage === "en" ? "Türkçeye geç" : "Switch to English");
       try {
         localStorage.setItem("ieee-khas-language", currentLanguage);
       } catch (_) {}
-      translatePage(currentLanguage);
+      try {
+        translatePage(currentLanguage);
+      } catch (error) {
+        console.error("IEEE KHAS language switch failed:", error);
+      }
     });
 
     translatePage(currentLanguage);
