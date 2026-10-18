@@ -122,10 +122,41 @@
     return value.replace(/\s+/g, " ").trim();
   }
 
+  const monthNames = {
+    "OCAK": "JANUARY",
+    "ŞUBAT": "FEBRUARY",
+    "MART": "MARCH",
+    "NİSAN": "APRIL",
+    "MAYIS": "MAY",
+    "HAZİRAN": "JUNE",
+    "TEMMUZ": "JULY",
+    "AĞUSTOS": "AUGUST",
+    "EYLÜL": "SEPTEMBER",
+    "EKİM": "OCTOBER",
+    "KASIM": "NOVEMBER",
+    "ARALIK": "DECEMBER"
+  };
+  const reverseMonthNames = Object.fromEntries(
+    Object.entries(monthNames).map(([tr, en]) => [en, tr])
+  );
+
+  function translateDate(value, language) {
+    const months = language === "en" ? monthNames : reverseMonthNames;
+    // Handles dates such as "3 EKİM 2026" and standalone month labels such as "EKİM 2026".
+    return value.replace(
+      /\\b(\\d{1,2}\\s+)?(OCAK|ŞUBAT|MART|NİSAN|MAYIS|HAZİRAN|TEMMUZ|AĞUSTOS|EYLÜL|EKİM|KASIM|ARALIK|JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER)(\\s+\\d{4})?\\b/gi,
+      (match, day = "", month, year = "") => {
+        const translatedMonth = months[month.toLocaleUpperCase("tr-TR")] || months[month.toUpperCase()];
+        if (!translatedMonth) return match;
+        return day + translatedMonth + year;
+      }
+    );
+  }
+
   function translateValue(value, language) {
     const key = normalize(value);
     const dictionary = language === "en" ? translations : reverseTranslations;
-    return dictionary[key] || value;
+    return dictionary[key] || translateDate(value, language);
   }
 
   function translatePage(language) {
