@@ -5133,3 +5133,48 @@ body {
     height: 46px;
   }
 }
+
+
+/* Final mobile language menu placement: a real item in the opened hamburger list */
+@media (max-width: 768px) {
+  .nav-container > .language-switcher {
+    display: none !important;
+  }
+
+  .nav-links .language-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 8px 0 2px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255,255,255,.25);
+    list-style: none;
+  }
+
+  .nav-links .language-menu-item .language-switcher {
+    display: inline-flex !important;
+    position: static !important;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    min-width: 68px;
+    height: 36px;
+    margin: 0 !important;
+    padding: 0 12px;
+    border: 1px solid rgba(255,255,255,.75);
+    border-radius: 999px;
+    background: rgba(255,255,255,.12);
+    color: #fff;
+    box-shadow: none;
+    font-size: .85rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: auto;
+  }
+
+  .nav-links .language-menu-item .language-switcher:active {
+    background: #fff;
+    color: #00629b;
+  }
+}
