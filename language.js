@@ -95,7 +95,7 @@
   };
 
   const normalizedTranslations = Object.fromEntries(
-    Object.entries(translations).map(([source, target]) => [source.replace(/\\s+/g, " ").trim(), target])
+    Object.entries(translations).map(([source, target]) => [source.replace(/\s+/g, " ").trim(), target])
   );
 
   const attributeTranslations = {
