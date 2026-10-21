@@ -5052,3 +5052,72 @@ body {
   .language-switch button { padding: 5px; }
   .nav-cta { font-size: .8rem; padding: 7px 9px; }
 }
+
+
+/* Mobile navbar alignment fix: keep logo slightly smaller and controls fully visible */
+@media (max-width: 768px) {
+  .nav-container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 22px;
+    gap: 6px;
+    overflow: visible;
+  }
+
+  .nav-logo {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  .nav-logo img {
+    height: 51px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .language-switch {
+    flex: 0 0 auto;
+    margin-left: auto;
+    gap: 1px;
+  }
+
+  .language-switch button {
+    padding: 5px 4px;
+  }
+
+  .nav-toggle {
+    display: flex;
+    flex: 0 0 34px;
+    width: 34px;
+    min-width: 34px;
+    margin-left: 0;
+    padding: 4px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-container {
+    padding-left: 9px;
+    padding-right: 18px;
+    gap: 4px;
+  }
+
+  .nav-logo img {
+    height: 48px;
+  }
+
+  .language-switch {
+    font-size: .75rem;
+  }
+
+  .nav-toggle {
+    flex-basis: 32px;
+    width: 32px;
+    min-width: 32px;
+  }
+}
