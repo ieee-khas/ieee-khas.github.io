@@ -469,6 +469,7 @@
   };
 
   const originalNodes = new WeakMap();
+  let currentLanguage = "tr";
   const originalAttributes = new WeakMap();
   let originalTitle;
 
@@ -532,6 +533,7 @@
 
   function setLanguage(lang) {
     if (!["tr", "en"].includes(lang)) lang = "tr";
+    currentLanguage = lang;
     document.documentElement.lang = lang;
     translateText(lang);
     translateAttributes(lang);
@@ -562,6 +564,17 @@
       lang = localStorage.getItem("ieeekhas-language") || "tr";
     } catch (_) {}
     setLanguage(lang);
+
+    // Translate content added after initial page load (for example, calendar entries).
+    const observer = new MutationObserver((mutations) => {
+      if (currentLanguage !== "en") return;
+      const hasAddedNodes = mutations.some((mutation) => mutation.addedNodes.length > 0);
+      if (hasAddedNodes) {
+        translateText(currentLanguage);
+        translateAttributes(currentLanguage);
+      }
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
   }
 
   if (document.readyState === "loading") {
