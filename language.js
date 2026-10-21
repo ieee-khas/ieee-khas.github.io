@@ -451,6 +451,43 @@
     "BAĞLANTILAR": "LINKS",
     "İLETİŞİM": "CONTACT",
     "SOSYAL": "SOCIAL"
+
+    ,"Etkinlik ve Organizasyon Sorumlusu & Yönetim Kurulu Üyesi": "Events and Organization Officer & Board Member",
+    "Kulübün sosyal medya hesaplarının yönetimi ve içerik paylaşım süreçlerinin koordinasyonu": "Managing the club's social media accounts and coordinating content publishing",
+    "Etkinlik, proje ve faaliyetlerin duyurularının hazırlanması ve ilgili platformlarda paylaşılması": "Preparing and publishing announcements for events, projects, and activities",
+    "Potansiyel sponsor kurum ve kuruluşların araştırılması": "Researching potential sponsors and organizations",
+    "Sponsorluk tekliflerinin hazırlanması ve ilgili kurumlarla iletişimin yürütülmesi": "Preparing sponsorship proposals and communicating with relevant organizations",
+    "Etkinlik ve projeler için sponsorluk desteğinin sağlanmasına yönelik çalışmaların yürütülmesi": "Working to secure sponsorship for events and projects",
+    "Sponsorlarla kurulan iş birliklerinin takibi ve koordinasyonu": "Following up on and coordinating sponsor partnerships",
+    "Kulübün tanıtım faaliyetlerinin yürütülmesi ve dijital görünürlüğünün artırılması": "Managing promotional activities and increasing the club's digital visibility",
+    "Etkinlik afişlerinin ve duyuru görsellerinin hazırlanması": "Preparing event posters and announcement visuals",
+    "Sosyal medya ve dijital platformlar için görsel içeriklerin tasarlanması": "Designing visual content for social media and digital platforms",
+    "Yönetim kurulu toplantılarının planlanması ve takibi": "Scheduling and following up on executive board meetings",
+    "Toplantı tutanaklarının hazırlanması ve arşivlenmesi": "Preparing and archiving meeting minutes",
+    "Kulüp içi yazışma ve resmi iletişim süreçlerinin yürütülmesi": "Managing internal correspondence and official communications",
+    "Kulüp faaliyetlerinin koordinasyonu ve organizasyon süreçlerine destek": "Coordinating club activities and supporting organizational processes",
+    "Kulüp projelerinin planlanması ve yürütülmesi": "Planning and delivering club projects",
+    "Projelerin zamanında ve hedeflere uygun şekilde tamamlanmasını sağlamak": "Ensuring projects are completed on time and according to their goals",
+    "Proje ekipleri arasındaki iletişim ve koordinasyonu yönetmek": "Managing communication and coordination among project teams",
+    "Kaynak kullanımını takip etmek ve optimize etmek": "Monitoring and optimizing resource use",
+    "Proje raporlarının hazırlanması ve sunum süreçlerine katkıda bulunmak": "Contributing to project reports and presentations",
+    "Kulüp üyeleri ve diğer departmanlarla iletişimin sürdürülmesi": "Maintaining communication with club members and other departments",
+    "Üniversite – sektör işbirliğini güçlendirmek": "Strengthening university–industry collaboration",
+    "Kulüp üyeleri": "Club Members",
+    "Yönetim Kurulu Üyeleri": "Executive Board Members",
+    "Etkinlik ve Organizasyon Departmanı Lideri": "Events and Organization Department Lead",
+    "Dr. Öğr. Üyesi": "Assistant Professor",
+    "Öğr. Üyesi": "Faculty Member",
+    "Mekatronik Mühendisliği": "Mechatronics Engineering",
+    "Sosyal medya": "Social Media",
+    "Tasarım": "Design",
+    "Kurumsal İletişim": "Corporate Communications",
+    "Sponsorluk": "Sponsorship",
+    "Başvuru": "Application",
+    "Katıl": "Join",
+    "Gelecek Etkinlikler": "Upcoming Events",
+    "Geçmiş Etkinlikler": "Past Events"
+
   };
 
   const normalizedTranslations = Object.fromEntries(
