@@ -565,12 +565,31 @@
   };
 
   const originalNodes = new WeakMap();
+  const originalElementContents = new WeakMap();
   let currentLanguage = "tr";
   const originalAttributes = new WeakMap();
   let originalTitle;
 
   function normalize(value) {
     return value.replace(/\s+/g, " ").trim();
+  }
+
+  function translateCompositeElements(lang) {
+    // Translate complete paragraphs/headings when inline markup split their text
+    // into several nodes. Restore the original HTML when switching back to Turkish.
+    const selector = "p, h1, h2, h3, h4, h5, h6, li, button, label";
+    document.querySelectorAll(selector).forEach((el) => {
+      if (el.querySelector("a, button, input, img, svg, video, audio")) return;
+      if (!originalElementContents.has(el)) originalElementContents.set(el, el.innerHTML);
+      const originalHTML = originalElementContents.get(el);
+      if (lang === "tr") {
+        if (el.innerHTML !== originalHTML) el.innerHTML = originalHTML;
+        return;
+      }
+      const source = normalize(el.textContent || "");
+      const target = normalizedTranslations[source];
+      if (target && el.textContent !== target) el.textContent = target;
+    });
   }
 
   function translateText(lang) {
@@ -631,6 +650,7 @@
     if (!["tr", "en"].includes(lang)) lang = "tr";
     currentLanguage = lang;
     document.documentElement.lang = lang;
+    translateCompositeElements(lang);
     translateText(lang);
     translateAttributes(lang);
 
