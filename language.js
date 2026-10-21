@@ -4,6 +4,10 @@
 
   const translations = {
     "Ana Sayfa": "Home",
+    "Takvim | IEEE KHAS": "Calendar | IEEE KHAS",
+    "Yönetim Kurulu | IEEE KHAS": "Executive Board | IEEE KHAS",
+    "Etkinlik Takvimi": "Event Calendar",
+    "Yönetim Kurulu Üyeleri": "Executive Board Members",
     "Hakkımızda": "About Us",
     "Yönetim Kurulu": "Executive Board",
     "Takvim": "Calendar",
