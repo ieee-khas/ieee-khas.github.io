@@ -421,6 +421,20 @@
       button = document.createElement("button");
       button.type = "button";
       button.className = "language-switcher";
+    }
+
+    // Put the language toggle inside the collapsible navigation list so it
+    // appears in a natural place only when the mobile hamburger menu is open.
+    const navLinks = nav.querySelector(".nav-links");
+    if (navLinks) {
+      let languageItem = navLinks.querySelector(".language-menu-item");
+      if (!languageItem) {
+        languageItem = document.createElement("li");
+        languageItem.className = "language-menu-item";
+        navLinks.appendChild(languageItem);
+      }
+      if (button.parentElement !== languageItem) languageItem.appendChild(button);
+    } else if (!button.parentElement) {
       const mobileToggle = nav.querySelector(".nav-toggle");
       if (mobileToggle) nav.insertBefore(button, mobileToggle);
       else nav.appendChild(button);
