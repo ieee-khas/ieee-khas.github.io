@@ -61,6 +61,7 @@
     "Sayman": "Treasurer",
     "Yönetim Kurulu Başkanı": "Executive Board Chair",
     "Akademik Danışman": "Faculty Advisor",
+    "Dr. Öğr. Üyesi Arif Selçuk ÖĞRENCİ": "Asst. Prof. Dr. Arif Selçuk ÖĞRENCİ",
     "Etkinlik Takvimi": "Events Calendar",
     "Etkinlikler": "Events",
     "Duyurular": "Announcements",
