@@ -91,7 +91,7 @@
     "Öğrenci Kolumuz, 2026 IEEE Region 8 Volunteer Leadership Training (VLT) Workshop'ta Öğrenci Kolu Başkanımız Almina Şeker tarafından temsil edildi.": "Our Student Branch was represented by its Chair, Almina Şeker, at the 2026 IEEE Region 8 Volunteer Leadership Training (VLT) Workshop.",
     "Üsküdar Üniversitesi ev sahipliğinde IEEE Marmara Bölge Toplantısı'na katıldık.": "We attended the IEEE Marmara Regional Meeting hosted by Üsküdar University.",
     "Projelər üretmek, yeni insanlarla tanışmak ve teknoloji dünyasının bir parçası olmak için IEEE KHAS ailesine katıl.": "Join the IEEE KHAS community to build projects, meet new people, and become part of the world of technology.",
-    "Proje üretmek, yeni insanlarla tanışmak ve teknoloji dünyasının bir parçası olmak için IEEE KHAS ailesine katıl.": "Join the IEEE KHAS community to build projects, meet new people, and become part of the world of technology."
+    "Proje üretmek, yeni insanlarla tanışmak ve teknoloji dünyasının bir parçası olmak için IEEE KHAS ailesine katıl.": "Join the IEEE KHAS community to build projects, meet new people, and become part of the world of technology.",
     "Başkanlar Çalıştayı | IEEE KHAS": "IEEE Türkiye Presidents' Workshop | IEEE KHAS",
     "ELES EXPO 2026 | IEEE KHAS": "ELES EXPO 2026 | IEEE KHAS",
     "Engineer's Talk | IEEE KHAS": "Engineer's Talk | IEEE KHAS",
