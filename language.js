@@ -686,6 +686,7 @@
       if (currentLanguage !== "en") return;
       const hasAddedNodes = mutations.some((mutation) => mutation.addedNodes.length > 0);
       if (hasAddedNodes) {
+        translateCompositeElements(currentLanguage);
         translateText(currentLanguage);
         translateAttributes(currentLanguage);
       }
