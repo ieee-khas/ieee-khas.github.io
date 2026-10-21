@@ -94,6 +94,10 @@
     "Proje üretmek, yeni insanlarla tanışmak ve teknoloji dünyasının bir parçası olmak için IEEE KHAS ailesine katıl.": "Join the IEEE KHAS community to build projects, meet new people, and become part of the world of technology."
   };
 
+  const normalizedTranslations = Object.fromEntries(
+    Object.entries(translations).map(([source, target]) => [source.replace(/\\s+/g, " ").trim(), target])
+  );
+
   const attributeTranslations = {
     "IEEE Kadir Has Üniversitesi": "IEEE Kadir Has University",
     "KHAS IEEE": "KHAS IEEE",
@@ -137,10 +141,10 @@
       }
 
       const key = normalize(original);
-      if (translations[key]) {
+      if (normalizedTranslations[key]) {
         const leading = original.match(/^\s*/)?.[0] || "";
         const trailing = original.match(/\s*$/)?.[0] || "";
-        node.nodeValue = leading + translations[key] + trailing;
+        node.nodeValue = leading + normalizedTranslations[key] + trailing;
       }
     }
   }
