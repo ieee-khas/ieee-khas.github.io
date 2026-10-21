@@ -450,9 +450,8 @@
     "Vizyonumuz": "Our Vision",
     "BAĞLANTILAR": "LINKS",
     "İLETİŞİM": "CONTACT",
-    "SOSYAL": "SOCIAL"
-
-    ,"Etkinlik ve Organizasyon Sorumlusu & Yönetim Kurulu Üyesi": "Events and Organization Officer & Board Member",
+    "SOSYAL": "SOCIAL",
+    "Etkinlik ve Organizasyon Sorumlusu & Yönetim Kurulu Üyesi": "Events and Organization Officer & Board Member",
     "Kulübün sosyal medya hesaplarının yönetimi ve içerik paylaşım süreçlerinin koordinasyonu": "Managing the club's social media accounts and coordinating content publishing",
     "Etkinlik, proje ve faaliyetlerin duyurularının hazırlanması ve ilgili platformlarda paylaşılması": "Preparing and publishing announcements for events, projects, and activities",
     "Potansiyel sponsor kurum ve kuruluşların araştırılması": "Researching potential sponsors and organizations",
