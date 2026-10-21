@@ -5096,3 +5096,40 @@ body {
     overflow: visible;
   }
 }
+
+
+/* Actual deploy-preview-1: place the language toggle inside the opened mobile menu */
+@media (max-width: 768px) {
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-container > .language-switcher {
+    display: none;
+  }
+
+  .navbar.active .nav-container > .language-switcher {
+    display: inline-flex;
+    position: absolute;
+    top: 76px;
+    right: 24px;
+    z-index: 1100;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    min-width: 42px;
+    height: 34px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(255,255,255,.65);
+    border-radius: 999px;
+    background: #ffffff;
+    color: #00629b;
+    box-shadow: 0 3px 10px rgba(0,0,0,.16);
+    font-weight: 700;
+  }
+
+  .nav-logo img {
+    height: 46px;
+  }
+}
